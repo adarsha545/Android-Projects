@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:just_eat/pages/home_page.dart';
 
+import 'pages/single_item_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -21,8 +23,11 @@ class _MyAppState extends State<MyApp> {
   }
 
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, routes: {
+    return MaterialApp(debugShowCheckedModeBanner: false, 
+    routes: {
       "/": (context) => const HomePage(),
-    });
+      "singleItemPage":(context)=>SingleItemPage(),
+    },
+    );
   }
 }
