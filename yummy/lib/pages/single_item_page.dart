@@ -8,7 +8,7 @@ class SingleItemPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF232227),
+      backgroundColor: Colors.black87,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(top: 25, left: 10, right: 15),
@@ -41,7 +41,7 @@ class SingleItemPage extends StatelessWidget {
                 ],
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 10),
+                padding: EdgeInsets.symmetric(vertical: 0),
                 child: Image.asset(
                   "assets/images/bg.png",
                   height: MediaQuery.of(context).size.height / 1.7,

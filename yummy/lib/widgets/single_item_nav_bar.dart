@@ -24,7 +24,7 @@ class SingleItemNavBar extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  "₹170",
+                  "₹240",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 22,

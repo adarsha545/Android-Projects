@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:yummy/widgets/home_nav_bar.dart';
 import 'package:yummy/widgets/items_widget.dart';
+import 'package:yummy/widgets/pizza_widget.dart';
+import 'package:yummy/widgets/sandwich_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,10 +12,10 @@ class HomePage extends StatelessWidget {
     return DefaultTabController(
       length: 4,
       child: Scaffold(
-        backgroundColor: Color(0xFF232227),
+        backgroundColor: Colors.black38,
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.only(top: 25),
+            padding: EdgeInsets.only(top: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -39,7 +41,7 @@ class HomePage extends StatelessWidget {
                 Padding(
                     padding: EdgeInsets.symmetric(horizontal: 15),
                     child: Text(
-                      "Yummyy",
+                      "Yummyy 😋",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 32,
@@ -49,7 +51,7 @@ class HomePage extends StatelessWidget {
                   height: 5,
                 ),
                 Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
                     child: Text(
                       "Delivers On Time",
                       style: TextStyle(
@@ -58,7 +60,7 @@ class HomePage extends StatelessWidget {
                       ),
                     )),
                 SizedBox(
-                  height: 30,
+                  height: 23,
                 ),
                 TabBar(
                     isScrollable: true,
@@ -67,7 +69,7 @@ class HomePage extends StatelessWidget {
                     tabs: [
                       Tab(text: "Burger"),
                       Tab(text: "Pizza"),
-                      Tab(text: "Cheese"),
+                      Tab(text: "Sandwich"),
                       Tab(text: "Pasta"),
                     ]),
                 Flexible(
@@ -75,8 +77,8 @@ class HomePage extends StatelessWidget {
                     child: TabBarView(
                       children: [
                         ItemWidget(),
-                        ItemWidget(),
-                        ItemWidget(),
+                        PizzaWidget(),
+                        SandwichWidget(),
                         ItemWidget(),
                       ],
                     ))

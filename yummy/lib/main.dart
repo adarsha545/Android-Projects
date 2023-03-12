@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yummy/pages/home_page.dart';
+import 'package:yummy/pages/pizza_item_page.dart';
+import 'package:yummy/pages/sandwich_item_page.dart';
 import 'package:yummy/pages/single_item_page.dart';
 
 void main() {
@@ -27,6 +29,8 @@ class _MyAppState extends State<MyApp> {
       routes: {
         "/": (context) => const HomePage(),
         "singleItemPage": (context) => SingleItemPage(),
+        "pizzaItemPage": (context) => PizzaItemPage(),
+        "sandwichItemPage": (context) => SandwichItemPage(),
       },
     );
   }
