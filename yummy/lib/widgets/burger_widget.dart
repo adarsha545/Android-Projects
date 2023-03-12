@@ -11,7 +11,7 @@ class BurgerWidget extends StatelessWidget {
       shrinkWrap: true,
       childAspectRatio: 0.72,
       children: [
-        for (int i = 1; i < 5; i++)
+        //for (int i = 1; i < 5; i++)
           Container(
             padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
             margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
@@ -35,7 +35,7 @@ class BurgerWidget extends StatelessWidget {
                   child: Container(
                     margin: EdgeInsets.all(10),
                     child: Image.asset(
-                      "assets/images/$i.png",
+                      "assets/images/1.png",
                       width: 120,
                       height: 120,
                       fit: BoxFit.cover,
@@ -47,7 +47,7 @@ class BurgerWidget extends StatelessWidget {
                   child: Container(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Cheese Burger",
+                      "Chicken Burger",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -59,7 +59,7 @@ class BurgerWidget extends StatelessWidget {
                 Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Hot Burger",
+                    "Rating: 4.5/5",
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.white60,
@@ -72,7 +72,7 @@ class BurgerWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        "\₹85",
+                        "\₹110",
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -89,7 +89,254 @@ class BurgerWidget extends StatelessWidget {
                 ),
               ],
             ),
+          //1st 
           ),
+
+//2nd S
+Container(
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Color(0xFF232227),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.4),
+                  spreadRadius: 1,
+                  blurRadius: 8,
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, "burgerItemPage");
+                  },
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "assets/images/2.png",
+                      width: 120,
+                      height: 120,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 8),
+                  child: Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Chicken Paradise",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Rating:4.7/5",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white60,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "\₹179",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Icon(
+                        CupertinoIcons.cart_badge_plus,
+                        size: 27,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          //2nd
+          ),
+
+          //3rd start
+          Container(
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Color(0xFF232227),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.4),
+                  spreadRadius: 1,
+                  blurRadius: 8,
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, "burgerItemPage");
+                  },
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "assets/images/3.png",
+                      width: 120,
+                      height: 120,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 8),
+                  child: Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Schezwan Burger",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Rating:4.6/5",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white60,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "\₹259",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Icon(
+                        CupertinoIcons.cart_badge_plus,
+                        size: 27,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          //3rd 
+          ),
+        
+        //4th start
+
+        Container(
+            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Color(0xFF232227),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.4),
+                  spreadRadius: 1,
+                  blurRadius: 8,
+                ),
+              ],
+            ),
+            child: Column(
+              children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, "burgerItemPage");
+                  },
+                  child: Container(
+                    margin: EdgeInsets.all(10),
+                    child: Image.asset(
+                      "assets/images/4.png",
+                      width: 120,
+                      height: 120,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 8),
+                  child: Container(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      "Tandoori Fillet",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Rating:4.9/5",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white60,
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(vertical: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text(
+                        "\₹349",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                        ),
+                      ),
+                      Icon(
+                        CupertinoIcons.cart_badge_plus,
+                        size: 27,
+                        color: Colors.white,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          //4th
+          ),
+        
+
       ],
     );
   }

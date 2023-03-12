@@ -116,7 +116,7 @@ class BurgerItemPage extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "abv uhuidhc  vj  sdchjf chhuhu jh efj  sdcj cjef icjiej",
+                    "A delicious level of spice in our fantastic beef Burgers. We have made these treats for over 30 years to the same recipe we love! A wee kick from these burgers gives them a twist on the original beef burger, a tasty alternative.",
                     style: TextStyle(
                       color: Colors.white60,
                       fontSize: 18,
