@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:yummy/widgets/single_item_nav_bar.dart';
 
-class SingleItemPage extends StatelessWidget {
-  const SingleItemPage({super.key});
+class BurgerItemPage extends StatelessWidget {
+  const BurgerItemPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yummy/widgets/home_nav_bar.dart';
-import 'package:yummy/widgets/items_widget.dart';
+import 'package:yummy/widgets/burger_widget.dart';
 import 'package:yummy/widgets/pizza_widget.dart';
 import 'package:yummy/widgets/sandwich_widget.dart';
 
@@ -76,10 +76,10 @@ class HomePage extends StatelessWidget {
                     flex: 1,
                     child: TabBarView(
                       children: [
-                        ItemWidget(),
+                        BurgerWidget(),
                         PizzaWidget(),
                         SandwichWidget(),
-                        ItemWidget(),
+                        BurgerWidget(),
                       ],
                     ))
               ],

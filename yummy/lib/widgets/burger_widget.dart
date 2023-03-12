@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ItemWidget extends StatelessWidget {
-  const ItemWidget({super.key});
+class BurgerWidget extends StatelessWidget {
+  const BurgerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class ItemWidget extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, "singleItemPage");
+                    Navigator.pushNamed(context, "burgerItemPage");
                   },
                   child: Container(
                     margin: EdgeInsets.all(10),
