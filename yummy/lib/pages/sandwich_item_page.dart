@@ -116,7 +116,7 @@ class SandwichItemPage extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "This sandwich recipe is made with just a few ingredients including cheese, breads, black pepper, green chillies and yes that's it. It is so crusty and crumby and full of air pockets. it smells incredible, the crust tastes just a wee bit burn",
+                    "This sandwich recipe is made with just a few ingredients including cheese, breads, black pepper, green chillies astes just a wee bit burn",
                     style: TextStyle(
                       color: Colors.white60,
                       fontSize: 18,

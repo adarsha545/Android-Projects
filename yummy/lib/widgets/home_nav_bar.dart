@@ -25,6 +25,7 @@ class HomeNavBar extends StatelessWidget {
           children: [
             Icon(
               Icons.mail,
+              
               color: Colors.white,
               size: 35,
             ),

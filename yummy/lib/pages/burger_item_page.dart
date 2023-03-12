@@ -61,7 +61,7 @@ class BurgerItemPage extends StatelessWidget {
                           "Hot & Fresh Burger",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 28,
+                            fontSize: 25,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -116,7 +116,7 @@ class BurgerItemPage extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "A delicious level of spice in our fantastic beef Burgers. We have made these treats for over 30 years to the same recipe we love! A wee kick from these burgers gives them a twist on the original beef burger, a tasty alternative.",
+                    "A delicious level of spice in our fantastic beef Burgers. We have made these treats for over 30 years to the same recipe we love! A wee kick from these burgers givrger, a tasty alternative.",
                     style: TextStyle(
                       color: Colors.white60,
                       fontSize: 18,

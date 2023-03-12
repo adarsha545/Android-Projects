@@ -130,7 +130,7 @@ class PizzaWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Pepperoni Pizza",
+                    "Spicy Pepperoni",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -211,7 +211,7 @@ class PizzaWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Margherita Pizza",
+                    "San Matteo",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -374,7 +374,7 @@ class PizzaWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Capricciosa Pizza",
+                    "Beef Classico",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

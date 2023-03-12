@@ -128,7 +128,7 @@ Container(
                   child: Container(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Chicken Paradise",
+                      "Crispy Chicken",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -209,7 +209,7 @@ Container(
                   child: Container(
                     alignment: Alignment.centerLeft,
                     child: Text(
-                      "Schezwan Burger",
+                      " Olive Coney",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
