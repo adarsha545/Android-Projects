@@ -58,7 +58,7 @@ class PizzaItemPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Hot & Fresh Pizza",
+                          "Delicious Pizza",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 28,
@@ -116,7 +116,7 @@ class PizzaItemPage extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "abv uhuidhc  vj  sdchjf chhuhu jh efj  sdcj cjef icjiej",
+                    "It is a famous, authentic Italian style pizza. It is available in almost every pizza corner. It includes mushroom, tomato, capsicum, tomatoes and red onions as toppings. Mozzarella cheese, goats’ cheese, spinach and caramelized onions are also used. The base is made of all-purpose flour and regular pizza sauce is used to make it.",
                     style: TextStyle(
                       color: Colors.white60,
                       fontSize: 18,

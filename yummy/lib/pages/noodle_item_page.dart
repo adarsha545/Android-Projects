@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:yummy/widgets/single_item_nav_bar.dart';
 
-class SandwichItemPage extends StatelessWidget {
-  const SandwichItemPage({super.key});
+class NoodleItemPage extends StatelessWidget {
+  const NoodleItemPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +43,7 @@ class SandwichItemPage extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 0),
                 child: Image.asset(
-                  "assets/sandwich/bg.png",
+                  "assets/noodle/bg.png",
                   height: MediaQuery.of(context).size.height / 1.7,
                   //fit: BoxFit.cover,
                 ),
@@ -58,7 +58,7 @@ class SandwichItemPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Crunchy Sandwich",
+                          "Flavorful Noodles",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 28,
@@ -116,7 +116,7 @@ class SandwichItemPage extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "This sandwich recipe is made with just a few ingredients including cheese, breads, black pepper, green chillies and yes that's it. It is so crusty and crumby and full of air pockets. it smells incredible, the crust tastes just a wee bit burn",
+                    "Noodles are an excellent source of energy and are high in vitamins and minerals like iron, thiamin, niacin, and riboflavin as well as containing low sodium content and low-fat content.",
                     style: TextStyle(
                       color: Colors.white60,
                       fontSize: 18,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:yummy/widgets/home_nav_bar.dart';
 import 'package:yummy/widgets/burger_widget.dart';
+import 'package:yummy/widgets/noodle_widget.dart';
 import 'package:yummy/widgets/pizza_widget.dart';
 import 'package:yummy/widgets/sandwich_widget.dart';
 
@@ -70,7 +71,7 @@ class HomePage extends StatelessWidget {
                       Tab(text: "Burger"),
                       Tab(text: "Pizza"),
                       Tab(text: "Sandwich"),
-                      Tab(text: "Pasta"),
+                      Tab(text: "Noodle"),
                     ]),
                 Flexible(
                     flex: 1,
@@ -79,7 +80,7 @@ class HomePage extends StatelessWidget {
                         BurgerWidget(),
                         PizzaWidget(),
                         SandwichWidget(),
-                        BurgerWidget(),
+                        NoodleWidget(),
                       ],
                     ))
               ],

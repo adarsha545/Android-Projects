@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class SandwichWidget extends StatelessWidget {
-  const SandwichWidget({super.key});
+class NoodleWidget extends StatelessWidget {
+  const NoodleWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,91 +11,6 @@ class SandwichWidget extends StatelessWidget {
       shrinkWrap: true,
       childAspectRatio: 0.72,
       children: [
-        /*for (int i = 1; i < 5; i++)
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
-            margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Color(0xFF232227),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.4),
-                  spreadRadius: 1,
-                  blurRadius: 8,
-                ),
-              ],
-            ),
-            child: Column(
-              children: [
-                InkWell(
-                  onTap: () {
-                    Navigator.pushNamed(context, "sandwichItemPage");
-                  },
-                  child: Container(
-                    margin: EdgeInsets.all(10),
-                    child: Image.asset(
-                      "assets/sandwich/$i.png",
-                      width: 125,
-                      height: 120,
-                      //fit: BoxFit.cover,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(bottom: 8),
-                  child: Container(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "Spicy Sandwich",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    "Hot Sandwich",
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.white60,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.symmetric(vertical: 10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        "\₹120",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                      Icon(
-                        CupertinoIcons.cart_badge_plus,
-                        size: 27,
-                        color: Colors.white,
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ),
-      ],
-    );
-  }
-}
-*/
-
         Container(
           padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
           margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
@@ -114,12 +29,12 @@ class SandwichWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, "sandwichItemPage");
+                  Navigator.pushNamed(context, "noodleItemPage");
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
-                    "assets/sandwich/1.png",
+                    "assets/noodle/1.png",
                     width: 120,
                     height: 120,
                     //fit: BoxFit.cover,
@@ -131,7 +46,7 @@ class SandwichWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Roast Beef",
+                    "Bucatini",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -156,7 +71,7 @@ class SandwichWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "\₹560",
+                      "\₹760",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -195,12 +110,12 @@ class SandwichWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, "sandwichItemPage");
+                  Navigator.pushNamed(context, "noodleItemPage");
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
-                    "assets/sandwich/2.png",
+                    "assets/noodle/2.png",
                     width: 120,
                     height: 120,
                     //fit: BoxFit.cover,
@@ -212,7 +127,7 @@ class SandwichWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Grilled Chicken",
+                    "Chow Mein",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -276,12 +191,12 @@ class SandwichWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, "sandwichItemPage");
+                  Navigator.pushNamed(context, "noodleItemPage");
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
-                    "assets/sandwich/3.png",
+                    "assets/noodle/3.png",
                     width: 120,
                     height: 120,
                     // fit: BoxFit.cover,
@@ -293,7 +208,7 @@ class SandwichWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Ham",
+                    "Ramen Noodles",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -358,12 +273,12 @@ class SandwichWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, "sandwichItemPage");
+                  Navigator.pushNamed(context, "noodleItemPage");
                 },
                 child: Container(
                   margin: EdgeInsets.all(10),
                   child: Image.asset(
-                    "assets/sandwich/4.png",
+                    "assets/noodle/4.png",
                     width: 120,
                     height: 120,
                     //fit: BoxFit.cover,
@@ -375,7 +290,7 @@ class SandwichWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Tortas",
+                    "Yi Mein",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
@@ -387,7 +302,7 @@ class SandwichWidget extends StatelessWidget {
               Container(
                 alignment: Alignment.centerLeft,
                 child: Text(
-                  "Rating:4.3/5",
+                  "Rating:4.4/5",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white60,
@@ -400,7 +315,7 @@ class SandwichWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      "\₹249",
+                      "\₹289",
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
