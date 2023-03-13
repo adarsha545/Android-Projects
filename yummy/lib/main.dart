@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:yummy/pages/home_page.dart';
+import 'package:yummy/pages/login_page.dart';
 import 'package:yummy/pages/noodle_item_page.dart';
 import 'package:yummy/pages/pizza_item_page.dart';
 import 'package:yummy/pages/sandwich_item_page.dart';
 import 'package:yummy/pages/burger_item_page.dart';
-import 'package:yummy/splash_screen.dart';
+import 'package:yummy/pages/signup_page.dart';
+import 'package:yummy/pages/welcome_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -34,9 +36,12 @@ class _MyAppState extends State<MyApp> {
       //themeMode: ThemeMode,
       color: Colors.black87,
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      //home: SplashScreen(),
       routes: {
-        //"/": (context) => HomePage(),
+        "/": (context) => WelcomePage(),
+        "signuppage": (context) => SignupPage(),
+        "loginpage": (context) => LoginPage(),
+        "homepage": (context) => HomePage(),
         "burgerItemPage": (context) => BurgerItemPage(),
         "pizzaItemPage": (context) => PizzaItemPage(),
         "sandwichItemPage": (context) => SandwichItemPage(),
