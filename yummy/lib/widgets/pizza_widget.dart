@@ -130,7 +130,7 @@ class PizzaWidget extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Spicy Pepperoni",
+                    "San Pepperoni",
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,

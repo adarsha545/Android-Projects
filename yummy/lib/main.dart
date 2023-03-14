@@ -8,6 +8,7 @@ import 'package:yummy/pages/sandwich_item_page.dart';
 import 'package:yummy/pages/burger_item_page.dart';
 import 'package:yummy/pages/signup_page.dart';
 import 'package:yummy/pages/welcome_page.dart';
+import 'package:yummy/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,7 +39,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       //home: SplashScreen(),
       routes: {
-        "/": (context) => WelcomePage(),
+        "/": (context) => SplashScreen(),
+        "welcomepage": (context) => WelcomePage(),
         "signuppage": (context) => SignupPage(),
         "loginpage": (context) => LoginPage(),
         "homepage": (context) => HomePage(),

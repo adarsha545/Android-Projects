@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.black38,
         appBar: AppBar(
-          backgroundColor: Colors.black87,
+          backgroundColor: Colors.transparent,
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.search)),
             IconButton(onPressed: () {}, icon: Icon(Icons.menu_book_outlined)),
