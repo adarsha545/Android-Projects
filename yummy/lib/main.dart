@@ -1,54 +1,46 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:yummy/pages/home_page.dart';
-import 'package:yummy/pages/login_page.dart';
+import 'package:yummy/pages/signup_latest_page.dart';
 import 'package:yummy/pages/noodle_item_page.dart';
 import 'package:yummy/pages/pizza_item_page.dart';
 import 'package:yummy/pages/sandwich_item_page.dart';
 import 'package:yummy/pages/burger_item_page.dart';
 import 'package:yummy/pages/signup_page.dart';
-import 'package:yummy/pages/welcome_page.dart';
+import 'package:yummy/screens/welcome_screen.dart';
 import 'package:yummy/splash_screen.dart';
+import 'package:provider/provider.dart';
+import 'package:yummy/provider/provider.dart';
 
-void main() {
-  runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(const MyApp());
 }
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  void initState() {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
-    super.initState();
-  }
-
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        primaryColor: Colors.black87,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => AuthProvider()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: SplashScreen(),
+        routes: {
+          "welcomepage": (context) => WelcomeScreen(),
+          "signuppage": (context) => SignupPage(),
+          "loginpage": (context) => LoginPage(),
+          "homepage": (context) => HomePage(),
+          "burgerItemPage": (context) => BurgerItemPage(),
+          "pizzaItemPage": (context) => PizzaItemPage(),
+          "sandwichItemPage": (context) => SandwichItemPage(),
+          "noodleItemPage": (context) => NoodleItemPage(),
+        },
       ),
-      //darkTheme: ThemeData(brightness: Brightness.dark),
-      //themeMode: ThemeMode,
-      color: Colors.black87,
-      debugShowCheckedModeBanner: false,
-      //home: SplashScreen(),
-      routes: {
-        "/": (context) => SplashScreen(),
-        "welcomepage": (context) => WelcomePage(),
-        "signuppage": (context) => SignupPage(),
-        "loginpage": (context) => LoginPage(),
-        "homepage": (context) => HomePage(),
-        "burgerItemPage": (context) => BurgerItemPage(),
-        "pizzaItemPage": (context) => PizzaItemPage(),
-        "sandwichItemPage": (context) => SandwichItemPage(),
-        "noodleItemPage": (context) => NoodleItemPage(),
-      },
     );
   }
 }

@@ -2,7 +2,6 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:yummy/widgets/drawer.dart';
-//import 'package:yummy/widgets/home_nav_bar.dart';
 import 'package:yummy/widgets/burger_widget.dart';
 import 'package:yummy/widgets/noodle_widget.dart';
 import 'package:yummy/widgets/pizza_widget.dart';
@@ -34,22 +33,6 @@ class HomePage extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15),
-                  /*child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      InkWell(
-                          onTap: () {
-                            //Scaffold.of(context).openDrawer();
-                          },
-                          child: Icon(Icons.sort_rounded,
-                              color: Colors.white, size: 35)),
-                      InkWell(
-                          onTap: () {},
-                          child:
-                              Icon(Icons.search, color: Colors.white, size: 35))
-                      //drawer:NavigationDrawer(children: children)
-                    ],
-                  ),*/
                 ),
                 SizedBox(
                   height: 10,
@@ -102,7 +85,6 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        // bottomNavigationBar: HomeNavBar(),
         bottomNavigationBar: CurvedNavigationBar(
             backgroundColor: Colors.transparent,
             onTap: (index) {},

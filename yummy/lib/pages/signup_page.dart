@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yummy/pages/home_page.dart';
+import 'package:yummy/screens/register_screen.dart';
 
 class SignupPage extends StatelessWidget {
   @override
@@ -73,7 +73,7 @@ class SignupPage extends StatelessWidget {
                   onPressed: () {
                     Navigator.of(context)
                         .pushReplacement(MaterialPageRoute(builder: (context) {
-                      return HomePage();
+                      return RegisterScreen();
                     }));
                   },
                   color: Color(0xff0095FF),
@@ -131,7 +131,7 @@ Widget inputFile({label, obscureText = false}) {
           contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
-                //color: Colors.grey[400]
+
                 ),
           ),
           border: OutlineInputBorder(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:yummy/pages/login_page.dart';
-import 'package:yummy/pages/signup_page.dart';
+import 'package:yummy/pages/signup_latest_page.dart';
+import 'package:yummy/screens/register_screen.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -22,7 +22,6 @@ class WelcomePage extends StatelessWidget {
                     "Welcome !!!",
                     style: TextStyle(
                       color: Colors.deepPurple.shade900,
-                      //backgroundColor: Colors.amber,
                       fontWeight: FontWeight.bold,
                       fontSize: 30,
                     ),
@@ -36,6 +35,7 @@ class WelcomePage extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.grey[700],
                       fontSize: 15,
+                      fontWeight: FontWeight.bold,
                     ),
                   )
                 ],
@@ -53,8 +53,10 @@ class WelcomePage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => RegisterScreen()));
                     },
                     // defining the shape
                     shape: RoundedRectangleBorder(
@@ -72,10 +74,8 @@ class WelcomePage extends StatelessWidget {
                     minWidth: double.infinity,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SignupPage()));
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => LoginPage()));
                     },
                     color: Colors.indigo.shade900,
                     //Color(0xff0095FF),

@@ -58,7 +58,7 @@ class SandwichItemPage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
-                          "Crunchy Sandwich",
+                          "Spicy Sandwich",
                           style: TextStyle(
                             color: Colors.white,
                             fontSize: 28,

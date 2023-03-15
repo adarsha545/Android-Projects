@@ -11,7 +11,6 @@ class BurgerWidget extends StatelessWidget {
       shrinkWrap: true,
       childAspectRatio: 0.72,
       children: [
-        //for (int i = 1; i < 5; i++)
         Container(
           padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
           margin: EdgeInsets.symmetric(vertical: 8, horizontal: 13),
@@ -197,8 +196,8 @@ class BurgerWidget extends StatelessWidget {
                 child: Container(
                   margin: EdgeInsets.all(10),
                   //decoration: BoxDecoration(
-                   // color: Colors.deepPurple,
-                   // borderRadius: BorderRadius.circular(20),
+                  // color: Colors.deepPurple,
+                  // borderRadius: BorderRadius.circular(20),
                   //),
                   child: Image.asset(
                     "assets/images/3.png",

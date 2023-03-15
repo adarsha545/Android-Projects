@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:yummy/pages/home_page.dart';
+import 'package:yummy/screens/register_screen.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  String name = "";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,27 +42,72 @@ class LoginPage extends StatelessWidget {
                   children: <Widget>[
                     Text(
                       "Yummyy 😋",
-                      style:
-                          TextStyle(
-                            color: Colors.deepPurple.shade900,
-                            fontSize: 30, 
-                            fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                          color: Colors.deepPurple.shade900,
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 15,
                     ),
                     Text(
-                      "(Login to your account)",
-                      style: TextStyle(fontSize: 15, color: Colors.grey[700]),
+                      "(Create Your Account)",
+                      style: TextStyle(
+                        fontSize: 15,
+                        color: Colors.grey[700],
+                        fontWeight: FontWeight.bold,
+                      ),
                     )
                   ],
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40),
                   child: Column(
-                    children: <Widget>[
-                      inputFile(label: "Email",),
-                      inputFile(label: "Password", obscureText: true)
+                    children: [
+                      TextFormField(
+                        decoration: InputDecoration(
+                          enabledBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(width: 3, color: Colors.orange),
+                            borderRadius: BorderRadius.circular(50.0),
+                          ),
+                          hintText: "Enter Username",
+                          labelText: "UserName",
+                        ),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "Username cannot be Empty";
+                          }
+                          return null;
+                        },
+                        onChanged: (value) {
+                          name = value;
+                          setState(() {});
+                        },
+                      ),
+                      SizedBox(
+                        height: 20.0,
+                      ),
+                      TextFormField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          enabledBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(width: 3, color: Colors.greenAccent),
+                            borderRadius: BorderRadius.circular(50.0),
+                          ),
+                          hintText: "Enter Password",
+                          labelText: "Password",
+                        ),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return "Password cannot be Empty";
+                          } else if (value.length < 7) {
+                            return "Password length should be atleast 7";
+                          }
+                          return null;
+                        },
+                      ),
                     ],
                   ),
                 ),
@@ -78,9 +129,8 @@ class LoginPage extends StatelessWidget {
                       onPressed: () {
                         Navigator.of(context).pushReplacement(
                             MaterialPageRoute(builder: (context) {
-                          return HomePage();
+                          return RegisterScreen();
                         }));
-                        //HomePage();
                       },
                       color: Color(0xff0095FF),
                       elevation: 0,
@@ -88,7 +138,7 @@ class LoginPage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(50),
                       ),
                       child: Text(
-                        "Login",
+                        "Sign Up",
                         style: TextStyle(
                           fontWeight: FontWeight.w600,
                           fontSize: 18,
@@ -101,9 +151,9 @@ class LoginPage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Don't have an account?"),
+                    Text("Already have an account?"),
                     Text(
-                      " Sign up",
+                      "  Login",
                       style: TextStyle(
                         color: Colors.deepPurple.shade900,
                         fontWeight: FontWeight.w600,
@@ -131,7 +181,7 @@ class LoginPage extends StatelessWidget {
 }
 
 // we will be creating a widget for text field
-Widget inputFile({label, obscureText = false}) {
+/*Widget inputFile({label, obscureText = false}) {
   return Column(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: <Widget>[
@@ -148,17 +198,13 @@ Widget inputFile({label, obscureText = false}) {
         decoration: InputDecoration(
             contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 10),
             enabledBorder: OutlineInputBorder(
-              borderSide: BorderSide(
-                  //color: Colors.grey[400]
-                  ),
+              borderSide: BorderSide(),
             ),
-            border: OutlineInputBorder(
-                //borderSide: BorderSide(color: Colors.grey[400])
-                )),
+            border: OutlineInputBorder()),
       ),
       SizedBox(
         height: 10,
       )
     ],
   );
-}
+}*/

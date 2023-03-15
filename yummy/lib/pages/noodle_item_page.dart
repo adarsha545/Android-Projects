@@ -116,7 +116,7 @@ class NoodleItemPage extends StatelessWidget {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "Noodles are an excellent source of energy and are high in vitamins and minerals like iron, thiamin, niacin, and riboflavin as well as containing low sodium content and low-fat content.",
+                    "Noodles are an excellent source of energy and are high in  annt and low-fat content.",
                     style: TextStyle(
                       color: Colors.white60,
                       fontSize: 18,
