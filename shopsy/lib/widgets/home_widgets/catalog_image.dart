@@ -1,5 +1,3 @@
-//import 'package:first_project/widgets/themes.dart';
-//import 'package:first_project/widgets/themes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 

@@ -5,7 +5,6 @@ import 'package:velocity_x/velocity_x.dart';
 class MyStore extends VxStore {
   late CatalogModel catalog;
   late CartModel cart;
-  //VxNavigator navigator;
   List<Item> items = [];
 
   MyStore() {

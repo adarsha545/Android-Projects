@@ -9,7 +9,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:velocity_x/velocity_x.dart';
-import 'package:http/http.dart' as http;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -31,17 +30,7 @@ class _HomePageState extends State<HomePage> {
     await Future.delayed(Duration(seconds: 2));
     final catalogJson =
         await rootBundle.loadString("assets/files/catalog.json");
-    //final response = await https.get(Uri.parse(
-    // "https://api.jsonbin.io/b/604dbddb683e7e079c4eefd3",
-    // ));
-    /*try {
-      response = await dio.get(url);
-    } catch (e) {
-      print(e);
-    }*/
-    //final catalogJson = response.body;
-    //.toString().replaceAll("\n", "");
-    // print("catalogJson");
+
     final decodedData = jsonDecode(catalogJson);
     var productsData = decodedData['products'];
     CatalogModel.items = List.from(productsData)
@@ -75,30 +64,6 @@ class _HomePageState extends State<HomePage> {
                     fontWeight: FontWeight.bold,
                   )),
         ),
-        /*appBar: AppBar(
-        title:Center(
-          child: Text("Cart App",style: TextStyle(color:Colors.black87,
-          fontWeight:FontWeight.bold,fontSize: 27),),
-        ),
-        
-      ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
-            ? ListView.builder(
-                itemCount: CatalogModel.items.length,
-                itemBuilder: (context, index) {
-                  return ItemWidget(
-                    item: CatalogModel.items[index],
-                  );
-                },
-              )
-            : Center(
-                child: CircularProgressIndicator(),
-              ),
-      ),
-      drawer: const MyDrawer(),*/
-
         body: SafeArea(
           child: Container(
             padding: Vx.m32,

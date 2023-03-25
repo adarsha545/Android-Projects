@@ -1,7 +1,6 @@
 import 'package:first_project/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
-import 'package:email_auth/email_auth.dart';
 
 class Login_Page extends StatefulWidget {
   const Login_Page({super.key});
@@ -14,7 +13,6 @@ class _Login_PageState extends State<Login_Page> {
   String name = "";
   bool changeButton = false;
   final _formkey = GlobalKey<FormState>();
-
 
   moveToHome(BuildContext context) async {
     if (_formkey.currentState!.validate()) {
