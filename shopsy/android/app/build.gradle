@@ -55,6 +55,7 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
 
        signingConfigs {
@@ -68,6 +69,7 @@ android {
    buildTypes {
        release {
            signingConfig signingConfigs.debug
+           minifyEnabled true
        }
    }
 
